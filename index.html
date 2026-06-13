@@ -1,333 +1,135 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASKWHY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  
 </head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1">&lt;title&gt;ASKWHY&lt;/title&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=VT323&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p1">:root{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--bg:#0d0d0d;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--panel:#161616;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--border:#2f2f2f;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--blue:#00a2ff;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--text:#f4f4f4;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">*{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin:0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding:0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>box-sizing:border-box;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">body{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background:var(--bg);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color:var(--text);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-family:Inter,sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>line-height:1.6;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">a{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color:inherit;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-decoration:none;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.container{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>width:min(1100px,92%);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin:auto;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">header{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding:50px 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-bottom:3px solid var(--blue);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background:</p>
-<p class="p1"><span class="Apple-converted-space">    </span>linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),</p>
-<p class="p1"><span class="Apple-converted-space">    </span>url("hero.jpg") center/cover;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.logo{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-family:'VT323', monospace;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size:5rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color:var(--blue);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-shadow:0 0 20px rgba(0,162,255,.5);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.tagline{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size:1.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>opacity:.85;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.nav{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-top:25px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display:flex;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>gap:15px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>flex-wrap:wrap;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.nav a{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background:var(--blue);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color:black;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding:10px 18px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-weight:700;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-radius:4px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.section{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding:60px 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.section-title{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-family:'VT323', monospace;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color:var(--blue);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size:3rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom:20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.myspace-box{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background:var(--panel);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border:2px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding:25px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-radius:8px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.bio{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size:1.05rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>max-width:800px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.gallery{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display:grid;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>grid-template-columns:repeat(auto-fit,minmax(250px,1fr));</p>
-<p class="p1"><span class="Apple-converted-space">    </span>gap:15px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.gallery img{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>width:100%;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>aspect-ratio:1;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>object-fit:cover;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border:4px solid white;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>transform:rotate(-1deg);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>transition:.25s;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.gallery img:nth-child(even){</p>
-<p class="p1"><span class="Apple-converted-space">    </span>transform:rotate(1deg);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.gallery img:hover{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>transform:scale(1.03);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.buttons{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display:flex;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>gap:20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>flex-wrap:wrap;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.cta{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background:var(--blue);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color:black;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding:15px 28px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-radius:6px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-weight:800;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display:inline-block;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.cta:hover{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>opacity:.85;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.footer{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-top:3px solid var(--blue);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding:40px 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align:center;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.counter{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-family:'VT323', monospace;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size:2rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-top:15px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color:var(--blue);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.socials{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-top:20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display:flex;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>justify-content:center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>gap:20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>flex-wrap:wrap;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.spotify-wrap{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-radius:12px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>overflow:hidden;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">@media(max-width:768px){</p>
-<p class="p2"><br></p>
-<p class="p1">.logo{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size:3.5rem;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.section-title{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size:2.3rem;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p1">&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1 class="logo"&gt;ASKWHY&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="tagline"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>Belgian Pop-Punk • Loud Guitars • Big Feelings</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;nav class="nav"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#music"&gt;Music&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#photos"&gt;Photos&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#bio"&gt;Bio&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#shows"&gt;Shows&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#merch"&gt;Merch&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#contact"&gt;Contact&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section id="music" class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;NOW PLAYING&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="myspace-box spotify-wrap"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;iframe</p>
-<p class="p1"><span class="Apple-converted-space">                </span>style="border-radius:12px"</p>
-<p class="p1"><span class="Apple-converted-space">                </span>src="https://open.spotify.com/embed/artist/4pknwIEKoIbKKO2M33mNip"</p>
-<p class="p1"><span class="Apple-converted-space">                </span>width="100%"</p>
-<p class="p1"><span class="Apple-converted-space">                </span>height="352"</p>
-<p class="p1"><span class="Apple-converted-space">                </span>frameborder="0"</p>
-<p class="p1"><span class="Apple-converted-space">                </span>allowfullscreen=""</p>
-<p class="p1"><span class="Apple-converted-space">                </span>allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/iframe&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section id="photos" class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;PHOTOS&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="gallery"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="photo1.jpg" alt="ASKWHY"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="photo2.jpg" alt="ASKWHY"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="photo3.jpg" alt="ASKWHY"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="photo4.jpg" alt="ASKWHY"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="photo5.jpg" alt="ASKWHY"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="photo6.jpg" alt="ASKWHY"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section id="bio" class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;ABOUT ASKWHY&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="myspace-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="bio"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>ASKWHY is a Belgian pop-punk band bringing back the</p>
-<p class="p1"><span class="Apple-converted-space">                </span>energy, emotion and hooks of the early 2000s.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Combining driving guitars, heartfelt lyrics and</p>
-<p class="p1"><span class="Apple-converted-space">                </span>modern production, ASKWHY creates songs that feel</p>
-<p class="p1"><span class="Apple-converted-space">                </span>equally at home blasting from your headphones or</p>
-<p class="p1"><span class="Apple-converted-space">                </span>from a festival stage.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section id="shows" class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;SHOWS&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="buttons"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a</p>
-<p class="p1"><span class="Apple-converted-space">                </span>class="cta"</p>
-<p class="p1"><span class="Apple-converted-space">                </span>href="YOUR_BANDSINTOWN_LINK_HERE"</p>
-<p class="p1"><span class="Apple-converted-space">                </span>target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>TOUR DATES</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section id="merch" class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;MERCH&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="buttons"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a</p>
-<p class="p1"><span class="Apple-converted-space">                </span>class="cta"</p>
-<p class="p1"><span class="Apple-converted-space">                </span>href="YOUR_MERCH_LINK_HERE"</p>
-<p class="p1"><span class="Apple-converted-space">                </span>target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>GET MERCH</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section id="contact" class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;CONTACT MANAGEMENT&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="buttons"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a</p>
-<p class="p1"><span class="Apple-converted-space">                </span>class="cta"</p>
-<p class="p1"><span class="Apple-converted-space">                </span>href="https://www.instagram.com/mean_mgmt/"</p>
-<p class="p1"><span class="Apple-converted-space">                </span>target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>BOOKING &amp; PRESS</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;footer class="footer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="logo" style="font-size:3rem;"&gt;ASKWHY&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Pop Punk Is Not Dead.&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="socials"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="https://open.spotify.com/artist/4pknwIEKoIbKKO2M33mNip" target="_blank"&gt;Spotify&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="https://www.facebook.com/profile.php?id=61567872476712" target="_blank"&gt;Facebook&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="https://www.instagram.com/mean_mgmt/" target="_blank"&gt;Management&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="counter"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>Visitors: 00001337</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<body class="fonts-loading">
+  <header>
+    <div class="container">
+      <a class="logo-link" href="index.html" aria-label="ASKWHY home">
+        <h1 class="logo">ASKWHY</h1> 
+      </a>
+      <p class="tagline">Belgian Pop-Punk • Loud Guitars • Big Feelings</p>
+      <div class="hero-actions" aria-label="Primary actions">
+        <a class="cta" href="../index.html">Home</a>
+        <a class="cta" href="../pages/shows.html">Shows</a>
+        <a class="cta" href="../pages/merch.html">Merch</a>
+        <a class="cta" href="../pages/contact.html">Contact</a>
+      </div>
+    </div>
+
+  </header>
+
+  <div id="msn-popup" class="msn-popup">
+    <div class="msn-header">
+        <span>MSN Messenger</span>
+        <button onclick="closePopup()">✕</button>
+        
+    </div>
+
+    <div class="msn-body">
+        <img src="../images/heart_.png" alt="MSN">
+
+        <div class="msn-content">
+            <strong id="popup-title">ASKWHY</strong>
+            <p id="popup-message">
+                <a href="https://open.spotify.com/track/1lbo69FDgK1oKCD7IrEqUZ?si=ffd23594b1974499" target="_blank">New song online now!</a>
+
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+  <section id="music" class="section">
+    <div class="container">
+      <h2 class="section-title">NOW PLAYING</h2>
+      <div class="myspace-box spotify-wrap">
+        <iframe
+          style="border-radius:12px"
+          src="https://open.spotify.com/embed/artist/4pknwIEKoIbKKO2M33mNip"
+          width="100%"
+          height="380"
+          frameborder=""
+          allowfullscreen=""
+            allow="autoplay *; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+ <section id="bio" class="section">
+    <div class="container">
+      <h2 class="section-title">ABOUT ASKWHY</h2>
+      <div class="myspace-box">
+        <p class="bio">
+          ASKWHY is a Belgian pop-punk band bringing back the energy, emotion and hooks of the early 2000s.
+          Combining driving guitars, heartfelt lyrics and modern production, ASKWHY creates songs that feel
+          equally at home blasting from your headphones or from a festival stage.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="photos" class="section">
+    <div class="container">
+      <h2 class="section-title">Media</h2>
+      
+      <div class="gallery">
+        <img src="../images/photo1.jpg" alt="ASKWHY">
+        <img src="../images/photo2.jpg" alt="ASKWHY">
+        <img src="../images/photo3.jpg" alt="ASKWHY">
+        <img src="../images/photo4.jpg" alt="ASKWHY">
+        <img src="../images/photo5.jpg" alt="ASKWHY">
+        <img src="../images/photo6.jpg" alt="ASKWHY">
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <footer class="footer">
+    <div class="container">
+      <h2 class="logo" style="font-size:3.6rem;">ASKWHY</h2>
+      <p>Pop Punk Is Not Dead.</p>
+      <div class="socials">
+        <a href="https://open.spotify.com/artist/4pknwIEKoIbKKO2M33mNip" target="_blank" rel="noopener noreferrer">Spotify</a>
+        <a href="https://www.facebook.com/profile.php?id=61567872476712" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/mean_mgmt/" target="_blank" rel="noopener noreferrer">Management</a>
+      </div>
+      <div class="counter">Visitors: 00001337</div>
+    </div>
+  </footer>
+
+
+  <script>
+  document.fonts.ready.then(() => {
+    document.body.classList.remove('fonts-loading');
+  });
+
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('msn-popup').style.display = 'block';
+    }, 2000); // 2.5 seconds
+  });
+
+  function closePopup() {
+    document.getElementById('msn-popup').remove();
+  }
+</script>
 </body>
 </html>
